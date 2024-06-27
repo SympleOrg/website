@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/47707e3c08.js" crossorigin="anonymous"></script>
+    <title>Symple #25125</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 onclick="window.location.href = '/'">Symple #25125</h1>
+        <div>
+            <a href="/">About Us</a>
+            <a href="/seasons">Seasons</a>
+        </div>
+    </div>
+    <div class="content">
+        <div class="season hide">
+            <span>
+                <i class="fa-solid fa-caret-up"></i>
+                <h1>Center Stage | 2023 - 2024</h1>
+            </span>
+            <br>
+            <iframe style="display: block; margin: 0 auto;" width="560" height="315" src="https://www.youtube.com/embed/6e-5Uo1dRic?si=TbWT0NN-6sxDt7if" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1>Timeline</h1>
+            <div class="timeline">
+                <div>
+                    <p>2024 March, 26 - 27</p>
+                    <p>We competed in Israel Championship - Gutman Division (Rank: 18 of 20)</p>
+                    <a href="https://ftc-events.firstinspires.org/2023/ILCMPGTMN/qualifications?team=25125">Our matches</a>
+    
+                </div>
+                <div>
+                    <p>2024 March, 12</p>
+                    <p>We competed in IL Qualifier #2 - Agnon (Rank: 12 of 24)</p>
+                    <a href="https://ftc-events.firstinspires.org/2023/ILEYQ1/qualifications?team=25125">Our matches</a>
+                    <a href="https://ftc-events.firstinspires.org/2023/ILEYQ1/playoff?team=25125">Our playoff matches</a>
+                </div>
+                <div>
+                    <p>2024 February, 20</p>
+                    <p>We competed in our first official competition (IL Qualifier #1 - Agnon, Rank: 16 of 25)</p>
+                    <a href="https://ftc-events.firstinspires.org/2023/ILSHQ1/qualifications?team=25125">Our matches</a>
+                </div>
+                <div>
+                    <p>2024 February, 1</p>
+                    <p>We competed in our first (unofficial) competition (ESC competition)</p>
+                </div>
+                <div>
+                    <p>2023 November, 29</p>
+                    <p>Asaf and Tal the ultimate guys opened our team!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <a href="https://www.instagram.com/symple.25125/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/SympleOrg">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.youtube.com/@symple25125">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://theorangealliance.org/teams/25125">
+                <i class="fa-solid fa-hashtag"></i>
+            </a>
+            <a href="mailto:symple25125@gmail.com">
+                <i class="fa-regular fa-envelope"></i>
+            </a>
+        </div>
+        <p><i class="fa-regular fa-copyright"></i> Copyright Symple 25125</p>
+    </div>
+
+    <script>
+        const seasons = document.querySelectorAll(".season")
+
+        seasons.forEach(season => {
+            season.querySelector("span").addEventListener("click", () => {
+                season.classList.toggle("hide")
+            })
+        })
+    </script>
+</body>
+</html>
