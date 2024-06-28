@@ -55,9 +55,14 @@ body {
     padding: 0 50px;
 }
 
-.navbar > h1 {
+/* .navbar > h1 {
     font-size: 3rem;
     text-align: center;
+    cursor: pointer;
+} */
+
+.navbar > img {
+    width: 255px;
     cursor: pointer;
 }
 
@@ -201,7 +206,25 @@ body {
     opacity: 0.65;
 }
 
-@media only screen and (max-width: 740px) {
+.video-container {
+    position: relative;
+    padding-bottom: min(56.25%, 315px);
+    height: 0;
+    margin: 0 auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 560px;
+    max-height: 315px;
+}
+  
+
+@media only screen and (max-width: 750px) {
     .navbar {
         flex-direction: column;
         padding-bottom: 30px;
@@ -213,7 +236,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 370px) {
     .navbar > div {
         display: flex;
         flex-direction: column;
